@@ -1,0 +1,22 @@
+n=int(input())
+for i in range(0,n):
+    x=int(input())
+    a=[int(x) for x in input().split()]
+    #print(a)
+    y=int(input())
+    b=[int(y) for y in input().split()]
+    #print(b)
+    count=0
+    s=[]
+    for i in a:
+        for j in b:
+            if i==j:
+                if j not in s:
+                    s.append(j)
+                    count=count+1
+#print(s)
+    if count==len(a):
+        print("True")
+    else:
+        print("False")
+
